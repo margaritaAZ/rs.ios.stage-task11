@@ -43,8 +43,6 @@ class RocketsListViewController: CollectionViewController {
     @objc override func sortItems() {
         let alertController = UIAlertController(title: nil, message: "Choose your option", preferredStyle: .actionSheet)
         alertController.view.tintColor = .coral
-        //        let message = NSMutableAttributedString(string: "Choose your option", attributes: [.font : UIFont.roboto(13, .medium), .foregroundColor: UIColor.slateGray])
-        //        alertController.setValue(message, forKey: "attributedMessage")
         
         let firstLaunchAction = UIAlertAction(title: "First launch", style: .default) {
             [self] alert in sort(order: .firstLaunch)

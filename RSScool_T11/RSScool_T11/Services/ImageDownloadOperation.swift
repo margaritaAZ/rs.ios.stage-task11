@@ -19,14 +19,13 @@ class ImageDownloadOperation: Operation {
     }
     
     override func main() {
-        guard !isCancelled else { return }
+        if isCancelled { return }
         
         guard let imageUrl = URL(string: self.url) else { return }
         URLSession.shared.dataTask(with: imageUrl) { [weak self] data, response, error in
             guard let self = self else { return }
             if self.isCancelled { return }
-            guard let imageData = data else { return }
-            guard let image = UIImage(data: imageData) else {return}
+            guard let imageData = data, let image = UIImage(data: imageData) else { return }
             self.image = image
             if ((self.completion) != nil) {
                 self.completion!(self.image!)

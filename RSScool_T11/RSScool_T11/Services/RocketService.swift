@@ -17,10 +17,6 @@ struct LoadService {
     var queue = OperationQueue()
     var operations: Dictionary<String, [Operation]> = [:]
     
-//    func loadData(for model: LoadData) {
-//        guard let urlFromString = URL(string: model.rawValue) else {return}
-//    }
-    
     func loadRockets(completion: @escaping([RocketModel]?, Error?) -> Void){
         guard let urlFromString = URL(string: LoadData.rockets.rawValue) else {return}
         
@@ -82,7 +78,7 @@ struct LoadService {
         let operation = ImageDownloadOperation()
         operation.initWithUrl(url)
         operations[url] = [operation]
-        operation.completion = {image in completion(image)}
+        operation.completion = completion
         queue.addOperation(operation)
     }
     

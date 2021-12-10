@@ -19,7 +19,7 @@ class LaunchesListViewController: CollectionViewController {
         collectionView.dataSource = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         loadService.loadLaunches { [weak self] launchesList, error in
             guard let self = self else { return }
             DispatchQueue.main.async { [self] in
@@ -38,7 +38,6 @@ class LaunchesListViewController: CollectionViewController {
     func loadImageForIndexPath(_ indexPath: IndexPath) {
         let launch = dataSource[indexPath.item]
         guard let imageUrl = launch.links.patch.small else {return}
-//        let imageUrl = "https://images2.imgbox.com/53/22/dh0XSLXO_o.png"
         loadService.loadImageForURL(imageUrl) {[weak self] image in
             guard let self = self else { return }
             DispatchQueue.main.async {

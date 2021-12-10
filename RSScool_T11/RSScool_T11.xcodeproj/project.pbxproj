@@ -19,6 +19,7 @@
 		F3617CAF26F2777600E8E2BA /* LaunchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CAD26F2777600E8E2BA /* LaunchCollectionViewCell.swift */; };
 		F3617CB026F2777600E8E2BA /* LaunchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3617CAE26F2777600E8E2BA /* LaunchCollectionViewCell.xib */; };
 		F3617CB226F4DB1B00E8E2BA /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3617CB126F4DB1B00E8E2BA /* Animator.swift */; };
+		F3726CF827635E7F00C97960 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3726CF727635E7F00C97960 /* ImageDownloader.swift */; };
 		F3AD9C7626E8E2A000A60173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AD9C7526E8E2A000A60173 /* AppDelegate.swift */; };
 		F3AD9C7F26E8E2A200A60173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AD9C7E26E8E2A200A60173 /* Assets.xcassets */; };
 		F3AD9C8226E8E2A200A60173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3AD9C8026E8E2A200A60173 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		F3617CAD26F2777600E8E2BA /* LaunchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCollectionViewCell.swift; sourceTree = "<group>"; };
 		F3617CAE26F2777600E8E2BA /* LaunchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchCollectionViewCell.xib; sourceTree = "<group>"; };
 		F3617CB126F4DB1B00E8E2BA /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		F3726CF727635E7F00C97960 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		F3AD9C7226E8E2A000A60173 /* RSScool_T11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSScool_T11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3AD9C7526E8E2A000A60173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3AD9C7E26E8E2A200A60173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				F3617C6A26EB9BB100E8E2BA /* RocketService.swift */,
 				F3617C6D26EBE44500E8E2BA /* ImageDownloadOperation.swift */,
+				F3726CF727635E7F00C97960 /* ImageDownloader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				F3617CB226F4DB1B00E8E2BA /* Animator.swift in Sources */,
 				F3AD9CFC26E9304800A60173 /* RocketsListViewController.swift in Sources */,
 				F3617C8526F24CA400E8E2BA /* Launch.swift in Sources */,
+				F3726CF827635E7F00C97960 /* ImageDownloader.swift in Sources */,
 				F3AD9C7626E8E2A000A60173 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
